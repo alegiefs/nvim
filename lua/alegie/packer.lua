@@ -37,4 +37,8 @@ return require('packer').startup(function(use)
 		setup = function() vim.g.mkdp_filetypes = { "markdown" } end, 
 		ft = { "markdown" }, 
 	})
+
+	use({ 'tpope/vim-fugitive' })
+
+	use({ 'ThePrimeagen/vim-be-good' })
 end)
