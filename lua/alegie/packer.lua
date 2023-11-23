@@ -41,4 +41,6 @@ return require('packer').startup(function(use)
 	use({ 'tpope/vim-fugitive' })
 
 	use({ 'ThePrimeagen/vim-be-good' })
+
+	use({ 'unblevable/quick-scope' })
 end)
