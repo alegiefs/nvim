@@ -17,3 +17,8 @@ vim.g.qs_highlight_on_keys={'f', 'F', 't', 'T'}
 vim.api.nvim_exec([[
 	au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
 ]], false)
+
+vim.api.nvim_exec([[
+	au FileType yaml setlocal equalprg=yq\ -i\ .
+]], false)
+
